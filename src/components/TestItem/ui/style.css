@@ -1,0 +1,19 @@
+.answers-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: 1px solid var(--main-border-color);
+    border-radius: var(--main-border-radius);
+}
+
+.answer-question {
+    font-size: 25px;
+    color: var(--main-text-color);
+}
+
+.answer-item {
+    display: flex;
+}

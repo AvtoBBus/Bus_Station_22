@@ -1,0 +1,19 @@
+.info-cell {
+    display: flex;
+    outline: 1px solid var(--main-border-color);
+    margin: 10px 0;
+    padding: 7px;
+    border-radius: var(--main-border-radius);
+    align-items: center;
+}
+
+.reversed {
+    flex-direction: row-reverse;
+}
+
+.cell-img {
+    --sizeWH: 35%;
+    width: var(--sizeWH);
+    height: var(--sizeWH);
+    border-radius: var(--main-border-radius);
+}

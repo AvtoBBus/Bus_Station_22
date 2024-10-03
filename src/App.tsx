@@ -1,13 +1,21 @@
-import React from 'react';
 import './App.css';
+import { InfoCell } from './components/InfoCell';
+import { TestContainer } from './components/TestContainer';
+import { TEXT_DATA } from './shared/data/textData';
+import { v4 as uuidv4 } from 'uuid';
 
-function App() {
-  return (
+const App = () => {
+
+  return <>
     <div className="App">
-      <header className="App-header">
-      </header>
+      {
+        TEXT_DATA.map((text: string, id: number) => {
+          return <InfoCell key={uuidv4()} textData={text} cellId={id} />
+        })
+      }
+      <TestContainer />
     </div>
-  );
+  </>
 }
 
 export default App;
