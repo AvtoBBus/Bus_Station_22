@@ -5,6 +5,8 @@
     padding: 7px;
     border-radius: var(--main-border-radius);
     align-items: center;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .reversed {
