@@ -2,8 +2,30 @@
   background-color: #403B59;
 }
 
+
 :root {
-  --main-border-color: #716C8C;
+  --main-border-color: #726d8d;
   --main-border-radius: 20px;
   --main-text-color: #D5D4DE;
+  --main-link-color: #c2bcfa;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #d5d4de73;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #726d8d;
+  border-radius: 10px;
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5e5884;
 }

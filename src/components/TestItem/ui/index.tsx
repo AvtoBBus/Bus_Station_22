@@ -13,6 +13,7 @@ export const TestItem = (props: any) => {
                         type='checkbox'
                         className="answer-input"
                         checked={props.selectedAnswer !== -1 && props.selectedAnswer === index}
+                        style={{ cursor: "pointer" }}
                         onChange={(e) => props.updateSelected(Number.parseInt(e.currentTarget.id))}
                     />
                     <p className="answer-text" key={uuidv4()}>{answer.text}</p>
