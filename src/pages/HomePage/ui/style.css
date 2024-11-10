@@ -1,0 +1,10 @@
+.about-author-text {
+    font-size: 30px;
+    color: var(--main-text-color);
+    height: fit-content;
+    width: 60%;
+    border-radius: var(--main-border-radius);
+    margin: 20px auto 0 auto;
+    padding: 7px;
+    outline: 1px solid var(--main-border-color);
+}

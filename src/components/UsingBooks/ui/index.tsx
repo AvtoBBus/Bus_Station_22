@@ -19,7 +19,7 @@ export const UsingBooks = () => {
     return <>
         <div className={`using-books-container ${show ? 'show' : ''}`} id="using-books-container" onTransitionEnd={showContentHandler}>
             <div className="using-books-header" onClick={showBookshanler} >
-                <h3 className="using-books-text nunito-800" style={{ textTransform: "uppercase" }}>Используемая литература</h3>
+                <h3 className="using-books-text nunito-800" style={{ textTransform: "uppercase" }}>{show ? 'СВЕРНУТЬ' : 'ПОСМОТРЕТЬ'}</h3>
                 <img src={OpenImg} alt="show/close using books" className={`open-container-img ${show ? 'show' : ''}`} />
             </div>
             <div className={`using-books-content ${showContent ? 'show' : ''}`}>

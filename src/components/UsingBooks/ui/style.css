@@ -6,7 +6,7 @@
     transition: all .4s ease-in-out;
     animation-name: showBooks;
     animation-duration: 1s;
-    margin-bottom: 20px;
+    margin: 20px auto;
 }
 
 .using-books-header {

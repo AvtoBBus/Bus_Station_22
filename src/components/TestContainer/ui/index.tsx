@@ -11,7 +11,7 @@ export const TestContainer = () => {
 
     return <>
         <div className="test-container">
-            <p className="test-container-header nunito-800">А ТЕПЕРЬ ПРОВЕРИМ ВАШИ ЗНАНИЯ</p>
+            <p className="test-container-header nunito-800" style={{ textTransform: "uppercase" }}>проверим ваши знания</p>
 
             <TestItem
                 testData={TESTING_DATA[curentAnswer]}

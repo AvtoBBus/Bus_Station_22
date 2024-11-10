@@ -1,24 +1,26 @@
+import { Route, Routes } from 'react-router-dom';
+import { InfoPage } from './pages/InfoPage';
+import { NavHeader } from './components/NavHeader';
+import { HomePage } from './pages/HomePage';
+import { TestPage } from './pages/TestPage';
+import { UsingBooksPage } from './pages/UsingBooksPage';
+
 import './App.css';
-import { InfoCell } from './components/InfoCell';
-import { TestContainer } from './components/TestContainer';
-import { UsingBooks } from './components/UsingBooks';
-import { TEXT_DATA } from './shared/data/textData';
-import { v4 as uuidv4 } from 'uuid';
 
 const App = () => {
 
   return <>
-    <div className="App">
-      {
-        TEXT_DATA.map((text: string, id: number) => {
-          return <InfoCell key={uuidv4()} textData={text} cellId={id} />
-        })
-      }
+    <NavHeader />
 
-      <TestContainer />
+    <div className="main-content">
+      <Routes>
+        <Route path='/' element={<HomePage />}></Route>
+        <Route path="/info-page" element={<InfoPage />}></Route>
+        <Route path="/test-page" element={<TestPage />}></Route>
+        <Route path="/using-books-page" element={<UsingBooksPage />}></Route>
 
-      <UsingBooks />
-
+        {/* <Route path="*" element={<ErrorPage />} /> */}
+      </Routes>
     </div>
   </>
 }

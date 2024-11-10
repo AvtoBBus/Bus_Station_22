@@ -4,6 +4,8 @@
 
 
 :root {
+  --main-header-color: #272241;
+  --main-header-height: 70px;
   --main-border-color: #726d8d;
   --main-border-radius: 20px;
   --main-text-color: #D5D4DE;
