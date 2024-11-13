@@ -12,7 +12,7 @@ export const HomePage = () => {
                 __html:
                     `
             Работу подготовил:<br/>
-            <h2 style="background-color: transparent">Винилов Константин</h2><br/>
+            <h2 style="background-color: transparent">Фамилия Имя</h2><br/>
             <br/>
             <br/>
             <br/>
