@@ -19,3 +19,17 @@
     height: var(--sizeWH);
     border-radius: var(--main-border-radius);
 }
+
+@media all and (max-width: 650px) {
+    .info-cell {
+        flex-direction: column;
+    }
+
+    .cell-img {
+        --sizeWH: 48%;
+    }
+
+    .main-content>.info-cell {
+        width: 90%;
+    }
+}
