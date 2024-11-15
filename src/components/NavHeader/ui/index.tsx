@@ -6,7 +6,7 @@ import "./style.css"
 export const NavHeader = () => {
     return <>
         <div className="header-container">
-            <Link to="/" style={{ backgroundColor: 'transparent' }}>
+            <Link to="/" className="header-link link-with-img" style={{ backgroundColor: 'transparent' }}>
                 <img src={HomeImg} alt="home-page" className="header-home-img" />
             </Link>
             <Link to="info-page" className="header-link">Теория</Link>

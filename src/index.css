@@ -31,3 +31,15 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #5e5884;
 }
+
+@media all and (max-width: 500px) {
+  :root {
+    --main-header-height: 130px;
+  }
+}
+
+@media all and (max-width: 375px) {
+  :root {
+    --main-header-height: 210px;
+  }
+}

@@ -40,3 +40,16 @@
   justify-content: center;
   align-items: center;
 }
+
+@media all and (max-width: 650px) {
+  .main-content {
+    width: fit-content;
+  }
+}
+
+@media all and (max-height: 850px) {
+  .main-content::after {
+    content: "    ";
+    height: 30px;
+  }
+}

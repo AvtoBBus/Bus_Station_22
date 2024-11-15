@@ -8,3 +8,10 @@
     padding: 7px;
     outline: 1px solid var(--main-border-color);
 }
+
+@media all and (max-width: 1280px) {
+    .about-author-text {
+        max-width: initial;
+        width: 90%;
+    }
+}
