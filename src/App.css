@@ -46,6 +46,10 @@
   .main-content {
     width: fit-content;
   }
+
+  .main-content>.page-title-text {
+    font-size: 27px;
+  }
 }
 
 @media all and (max-height: 850px) {

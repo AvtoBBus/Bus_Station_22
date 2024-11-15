@@ -59,3 +59,25 @@
     color: #403B59;
     background-color: #84C893;
 }
+
+@media all and (max-width: 1024px) {
+    .test-container-header {
+        font-size: 35px;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .test-container-header {
+        --horizontalMargin: 15px;
+        font-size: 23px;
+        margin-left: var(--horizontalMargin);
+        margin-right: var(--horizontalMargin);
+    }
+}
+
+@media all and (max-width: 650px) {
+    .button {
+        width: 140px;
+        font-size: 12px;
+    }
+}
