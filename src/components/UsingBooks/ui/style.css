@@ -4,7 +4,6 @@
     border-radius: var(--main-border-radius);
     height: 41px;
     transition: all .4s ease-in-out;
-    animation-name: showBooks;
     animation-duration: 1s;
     margin: 20px auto;
 }
@@ -76,4 +75,11 @@
     cursor: pointer;
     color: inherit;
     transition: all .1s ease-in-out;
+}
+
+@media all and (max-width: 650px) {
+    .using-books-text {
+        font-size: 24px;
+        line-height: 40px;
+    }
 }

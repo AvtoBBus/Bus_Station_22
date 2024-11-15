@@ -41,6 +41,11 @@
   align-items: center;
 }
 
+@media all and (max-width: 720px) {
+  .main-content>.page-title-text {
+    font-size: 27px;
+  }
+}
 
 @media all and (max-width: 650px) {
   .main-content {
@@ -48,7 +53,7 @@
   }
 
   .main-content>.page-title-text {
-    font-size: 27px;
+    font-size: 24px;
   }
 }
 

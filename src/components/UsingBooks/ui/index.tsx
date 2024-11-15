@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { USING_BOOKS } from "../../../shared/data/usingBooks"
 
 import OpenImg from "../../../shared/assets/openContainerImg.svg"
@@ -16,6 +16,16 @@ export const UsingBooks = () => {
 
     const showContentHandler = () => setShowContent(show);
 
+
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            const elem = document.getElementById('using-books-container');
+            elem && elem.style.setProperty('animationName', 'showBooks');
+        }, 500);
+
+        return () => clearTimeout(timeout);
+    }, []);
+
     return <>
         <div className={`using-books-container ${show ? 'show' : ''}`} id="using-books-container" onTransitionEnd={showContentHandler}>
             <div className="using-books-header" onClick={showBookshanler} >
@@ -23,7 +33,7 @@ export const UsingBooks = () => {
                 <img src={OpenImg} alt="show/close using books" className={`open-container-img ${show ? 'show' : ''}`} />
             </div>
             <div className={`using-books-content ${showContent ? 'show' : ''}`}>
-                {USING_BOOKS.map((item: string) => {
+                {show && USING_BOOKS.map((item: string) => {
                     return <a href={item} className="using-books-item">{item}</a>
                 })}
             </div>
