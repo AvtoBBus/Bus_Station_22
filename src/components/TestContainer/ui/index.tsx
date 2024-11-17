@@ -40,8 +40,8 @@ export const TestContainer = () => {
             {selectedAnswers.every(item => item !== -1) && <>
                 <button
                     className="check-result-button"
-                    onClick={async () => {
-                        const testResult = await getResult(selectedAnswers);
+                    onClick={() => {
+                        const testResult = getResult(selectedAnswers);
                         if (testResult) alert('Вы успешно ответили на все вопросы!');
                         else alert('К сожалению вы не верно ответили на некоторые вопросы(');
                         setSelectedAnswers([-1, -1, -1, -1, -1]);

@@ -4,6 +4,7 @@ import { NavHeader } from './components/NavHeader';
 import { HomePage } from './pages/HomePage';
 import { TestPage } from './pages/TestPage';
 import { UsingBooksPage } from './pages/UsingBooksPage';
+import { ErrorPage } from './pages/ErrorPage';
 
 import './App.css';
 
@@ -19,7 +20,7 @@ const App = () => {
         <Route path="/test-page" element={<TestPage />}></Route>
         <Route path="/using-books-page" element={<UsingBooksPage />}></Route>
 
-        {/* <Route path="*" element={<ErrorPage />} /> */}
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </div>
   </>

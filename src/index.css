@@ -10,6 +10,7 @@
   --main-border-radius: 20px;
   --main-text-color: #D5D4DE;
   --main-link-color: #c2bcfa;
+  --error-title-font-size: 180px;
 }
 
 ::-webkit-scrollbar {
