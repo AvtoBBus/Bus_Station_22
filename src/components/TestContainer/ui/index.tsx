@@ -1,8 +1,8 @@
 import { useState } from "react"
-import { TestItem } from "../../TestItem"
 import { TESTING_DATA } from "../../../shared/data/testingData";
 import "./style.css"
 import { getResult } from "../../../shared/instruments/checkCorrect";
+import { TestItem } from "../../TestItem";
 
 export const TestContainer = () => {
 

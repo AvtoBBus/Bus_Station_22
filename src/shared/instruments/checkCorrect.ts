@@ -1,5 +1,5 @@
 export function getResult(results: Array<number>) {
-    const CORRECT_ANSWERS = '44444';
+    const CORRECT_ANSWERS = '31231';
     return CORRECT_ANSWERS === JSON.stringify(results)
         .replaceAll(',', '')
         .replaceAll('[', '')

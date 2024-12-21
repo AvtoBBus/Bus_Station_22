@@ -51,7 +51,7 @@
 }
 
 .using-books-container.show {
-    height: 200px;
+    height: 270px;
 }
 
 .open-container-img.show {
@@ -75,6 +75,7 @@
     cursor: pointer;
     color: inherit;
     transition: all .1s ease-in-out;
+    margin: 10px 0;
 }
 
 @media all and (max-width: 650px) {

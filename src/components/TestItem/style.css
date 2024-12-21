@@ -16,4 +16,16 @@
 
 .answer-item {
     display: flex;
+    margin-bottom: 15px;
+    transition: all .4s ease-in-out;
+}
+
+.answer-item.selected {
+    outline: 2px solid var(--main-border-color);
+    border-radius: var(--main-border-radius);
+}
+
+.answer-text {
+    cursor: pointer;
+    color: var(--main-text-color);
 }

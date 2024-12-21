@@ -5,7 +5,7 @@ export const TestPage = () => {
     return <>
 
         <p className="page-title-text nunito-800">
-            маааленький тестик
+            маленький тестик
         </p>
 
         <TestContainer />
