@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { InfoCell } from "../../../components/InfoCell"
 import { BAD_HR_DATA, FAKE_LOVE_DATA, NOT_4_DONATE_DATA, SAVE_BAD_HR_DATA, SAVE_FAKE_LOVE_DATA, SAVE_NOT_4_DONATE_DATA, SAVE_SMITHIND_DATA, SAVE_VITHING_DATA, SMITHING_DATA, TEXT_DATA, VITHING_DATA } from "../../../shared/data/textData"
 import { v4 as uuidv4 } from 'uuid';
+import { TextData } from "../../../shared/DataTypes";
 
 export const InfoPage = () => {
 
@@ -15,11 +16,11 @@ export const InfoPage = () => {
 
     const renderData = () => {
 
-        let titleText = 'немного теории'
-        let data2render = [''];
+        let titleText = 'немного теории';
+        let data2render: Array<TextData>;
         let otherText = {
             title: '',
-            text: ['']
+            text: [] as Array<TextData>
         };
 
         switch (currPage) {
@@ -74,15 +75,25 @@ export const InfoPage = () => {
 
         return <>
             <p className="page-title-text nunito-800">{titleText}</p>
-            {data2render.map((text: string, id: number) => {
-                return <InfoCell key={uuidv4()} textData={text} cellId={id} />
+            {data2render.map((data: TextData, id: number) => {
+                return <InfoCell
+                    key={uuidv4()}
+                    textData={data.text}
+                    cellId={id}
+                    img={data.img}
+                />
             })}
 
             {otherText.title !== '' &&
                 <>
                     <p className="page-title-text nunito-800">{otherText.title}</p>
-                    {otherText.text.map((text: string, id: number) => {
-                        return <InfoCell key={uuidv4()} textData={text} cellId={id} />
+                    {otherText.text.map((data: TextData, id: number) => {
+                        return <InfoCell
+                            key={uuidv4()}
+                            textData={data.text}
+                            cellId={id}
+                            img={data.img}
+                        />
                     })}
                 </>
             }

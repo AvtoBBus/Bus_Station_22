@@ -5,3 +5,8 @@ export type TestData = {
         text: string
     }>
 }
+
+export type TextData = {
+    text: string,
+    img: any
+}
