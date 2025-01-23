@@ -3,7 +3,8 @@ export type TestData = {
     answers: Array<{
         id: number,
         text: string
-    }>
+    }>,
+    correct: number
 }
 
 export type TextData = {

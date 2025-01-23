@@ -6,8 +6,10 @@ import { TestItem } from "../../TestItem";
 
 export const TestContainer = () => {
 
+    const testAnswInit = new Array(TESTING_DATA.length).fill(-1);
+
     const [curentAnswer, setCurrentAnswer] = useState<number>(0);
-    const [selectedAnswers, setSelectedAnswers] = useState<Array<number>>([-1, -1, -1, -1, -1]);
+    const [selectedAnswers, setSelectedAnswers] = useState<Array<number>>(testAnswInit);
 
     return <>
         <div className="test-container">
@@ -41,10 +43,10 @@ export const TestContainer = () => {
                 <button
                     className="check-result-button"
                     onClick={() => {
-                        const testResult = getResult(selectedAnswers);
+                        const testResult = getResult(selectedAnswers, TESTING_DATA);
                         if (testResult) alert('Вы успешно ответили на все вопросы!');
                         else alert('К сожалению вы не верно ответили на некоторые вопросы(');
-                        setSelectedAnswers([-1, -1, -1, -1, -1]);
+                        setSelectedAnswers(testAnswInit);
                     }}>Проверить ответы</button>
             </>}
 
