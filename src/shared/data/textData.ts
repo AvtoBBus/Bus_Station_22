@@ -39,11 +39,11 @@ export const TEXT_DATA: Array<TextData> =
                 },
                 {
                         text: `К самым популярным видам мошенничества относятся:<ul>
-                                <li><a href="/info-page/smithing">SMS-фишинг («смишинг»)</a></li>
-                                <li><a href="/info-page/vithing">Мошенничество с помощью телефонных звонков («вишинг»)</a></li>
-                                <li><a href="/info-page/bad_hr">Мошенничество с предложениями работы</a></li>
-                                <li><a href="/info-page/fake_love">Обман в соцсетях и на сайтах знакомств</a></li>
-                                <li><a href="/info-page/not_4_donate">Ложные сборы на благотворительность</a></li>
+                                <li><a href="/info-page/smithing" class="linkInText">SMS-фишинг («смишинг»)</a></li>
+                                <li><a href="/info-page/vithing" class="linkInText">Мошенничество с помощью телефонных звонков («вишинг»)</a></li>
+                                <li><a href="/info-page/bad_hr" class="linkInText">Мошенничество с предложениями работы</a></li>
+                                <li><a href="/info-page/fake_love" class="linkInText">Обман в соцсетях и на сайтах знакомств</a></li>
+                                <li><a href="/info-page/not_4_donate" class="linkInText">Ложные сборы на благотворительность</a></li>
                                 </ul>`,
                         img: Hacker2Img
                 },
