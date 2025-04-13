@@ -1,4 +1,5 @@
 import "./style.css"
+import QR from "../../../shared/assets/schoolProjectQR.png"
 
 export const HomePage = () => {
     return <>
@@ -21,6 +22,8 @@ export const HomePage = () => {
             `
             }}
         />
+
+        <img src={QR} alt="" className="qr-container" />
 
     </>
 }
